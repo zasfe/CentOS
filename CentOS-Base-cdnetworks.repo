@@ -1,0 +1,39 @@
+[cdnetworks-base]
+name=CentOS-$releasever - cdnetworks-Base
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os
+baseurl=http://centos.mirror.cdnetworks.com/$releasever/os/$basearch
+gpgcheck=1
+enabled=1
+#gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+ 
+#released updates
+[cdnetworks-updates]
+name=CentOS-$releasever - cdnetworks-Updates
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates
+baseurl=http://centos.mirror.cdnetworks.com/$releasever/updates/$basearch
+gpgcheck=1
+enabled=1
+#gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+#additional packages that may be useful
+ 
+[cdnetworks-extras]
+name=CentOS-$releasever - cdnetworks-Extras
+baseurl=http://centos.mirror.cdnetworks.com/$releasever/extras/$basearch
+gpgcheck=0
+#gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+ 
+#additional packages that extend functionality of existing packages
+[cdnetworks-centosplus]
+name=CentOS-$releasever - cdnetworks-Plus
+baseurl=http://centos.mirror.cdnetworks.com/$releasever/centosplus/$basearch
+gpgcheck=1
+enabled=0
+#gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+ 
+#contrib - packages by Centos Users
+[cdnetworks-contrib]
+name=CentOS-$releasever - cdnetworks-Contrib
+baseurl=http://centos.mirror.cdnetworks.com/$releasever/contrib/$basearch
+gpgcheck=1
+enabled=0
+#gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
