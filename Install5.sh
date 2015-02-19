@@ -240,7 +240,7 @@ cp -pa /etc/acpi/events/power.conf /usr/local/src/conf_file/power.conf
 
 echo \#\!/bin/sh > /etc/acpi/actions/powerbutton.sh
 echo >> /etc/acpi/actions/powerbutton.sh
-echo ps awwux \> /root/ps.\`date +\%Y%m%d%H`.txt >> /etc/acpi/actions/powerbutton.sh
+echo ps awwux \> /root/ps.\`date +\%Y%m%d%H\`.txt >> /etc/acpi/actions/powerbutton.sh
 echo pstree \> /root/pstree.\`date +\%Y\%m\%d\%H\` >> /etc/acpi/actions/powerbutton.sh
 echo ps awwux \|grep nobody \> /root/nobody.\`date +\%Y\%m\%d\%H\`.txt >> /etc/acpi/actions/powerbutton.sh
 echo free \> /root/memory.\`date +\%Y\%m\%d\%H\`.txt >> /etc/acpi/actions/powerbutton.sh
