@@ -250,7 +250,7 @@ echo /usr/bin/reboot -n >> /etc/acpi/actions/powerbutton.sh
 
 cp -pa /etc/acpi/actions/powerbutton.sh /usr/local/src/powerbutton.sh
 
-cat /etc/acpi/events/power.conf | sed -e "s/aa/action=\/etc\/acpi\/actions\/powerbutton.sh/s" > /usr/local/src/power.conf.new
+cat /etc/acpi/events/power.conf | sed -e "s/aa/action=\/etc\/acpi\/actions\/powerbutton.sh/g" > /usr/local/src/power.conf.new
 cp -f /usr/local/src/power.conf.new /etc/acpi/events/power.conf
 
 
