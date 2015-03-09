@@ -259,3 +259,61 @@ cp -f /usr/local/src/power.conf.new /etc/acpi/events/power.conf
 ####################
 
 yum -y update
+
+
+#!/bin/bash
+#
+## /* Permission Setting */
+chmod 700 /bin/dd
+chmod 755 /bin/df
+chmod 700 /bin/dmesg
+chmod 700 /bin/mail
+chmod 700 /bin/mount
+chmod 700 /bin/mknod
+chmod 700 /bin/netstat
+#chmod 700 /bin/ping
+#chmod 700 /bin/ping6
+chmod 755 /bin/ps
+chmod 700 /bin/sync
+chmod 700 /bin/umount
+chmod 755 /bin/uname
+chmod 700 /bin/traceroute
+
+chmod 700 /usr/bin/c++
+chmod 700 /usr/bin/chage
+chmod 700 /usr/bin/chfn
+chmod 700 /usr/bin/curl
+chmod 755 /usr/bin/find
+chmod 700 /usr/bin/finger
+chmod 700 /usr/bin/g++
+chmod 700 /usr/bin/gcc
+chmod 700 /usr/bin/install
+chmod 700 /usr/bin/iostat
+chmod 700 /usr/bin/last
+chmod 700 /usr/bin/lastlog
+chmod 700 /usr/bin/man
+chmod 700 /usr/bin/make
+chmod 700 /usr/bin/nslookup
+chmod 700 /usr/bin/pstree
+chmod 700 /usr/bin/rlog
+chmod 700 /usr/bin/rlogin
+chmod 700 /usr/bin/top
+chmod 700 /usr/bin/uptime
+chmod 700 /usr/bin/w
+chmod 700 /usr/bin/wall
+chmod 700 /usr/bin/wget
+chmod 700 /usr/bin/whereis
+chmod 700 /usr/bin/which
+chmod 700 /usr/bin/who
+chmod 700 /usr/bin/write
+
+chmod 700 /usr/sbin/edquota
+chmod 700 /usr/sbin/glibc_post_upgrade.i686
+chmod 700 /usr/sbin/groupadd
+chmod 700 /usr/sbin/groupdel
+chmod 700 /usr/sbin/grpconv
+chmod 700 /usr/sbin/grpunconv
+chmod 700 /usr/sbin/pwconv
+chmod 700 /usr/sbin/pwunconv
+chmod 700 /usr/sbin/useradd
+chmod 700 /usr/sbin/userdel
