@@ -135,7 +135,7 @@ cd /etc/mail
 
 cp -pa /etc/mail/sendmail.mc /usr/local/src/conf_file/sendmail.mc
 
-cat /etc/mail/sendmail.mc | sed -e "s/dnl define(`SMART_HOST',`smtp.your.provider')/
+#cat /etc/mail/sendmail.mc | sed -e "s/dnl define(`SMART_HOST',`smtp.your.provider')/
 
 #cp -f /usr/local/src/conf_file/sendmail.mc /etc/mail/ 
 mv -f /etc/mail/sendmail.cf /etc/mail/sendmail.cf_old
