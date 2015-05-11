@@ -5,8 +5,8 @@
 ## 0. yum install ##
 ####################
 
-yum groupinstall "Development Tools"
-yum groupinstall "Development Libraries"  
+yum -y groupinstall "Development Tools"
+yum -y groupinstall "Development Libraries"  
 
 ## /* System Update */
 yum -y update
