@@ -89,6 +89,11 @@ echo fi >> /etc/cron.daily/logrotate
 echo exit 0 >> /etc/cron.daily/logrotate
 
 
+
+wget -o /etc/logrotate.d/apache_log https://raw.githubusercontent.com/zasfe/CentOS/master/Apache/apache_log
+
+
+
 #############
 ## 2. i18n ##
 #############
